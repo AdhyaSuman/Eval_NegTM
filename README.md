@@ -6,14 +6,19 @@ This repository contains the implementation and resources for the paper [Evaluat
 
 This work evaluates how different **negative sampling strategies** impact **neural topic models**. By integrating negative samples into the decoder of VAE-based topic models, the authors observe improvements across **topic coherence**, **topic diversity**, and **document classification accuracy**. The study benchmarks multiple strategies across several datasets, showing that **contrastive-style training** enhances the quality and robustness of learned topics—both quantitatively and through human evaluation.
 
+
 ## 📊 Datasets
 
-The following publicly available datasets were used in our experiments. All datasets are preprocessed and available in the repository:
+The following publicly available datasets were used in our experiments. All datasets are preprocessed and available in this repository:
 
-- [20NewsGroups (20NG)](https://github.com/AdhyaSuman/Eval_NegTM/tree/master/preprocessed_datasets/20NewsGroup) — A collection of approximately 20,000 newsgroup documents, partitioned across 20 different newsgroups.
-- [GoogleNews (GN)](https://github.com/AdhyaSuman/Eval_NegTM/tree/master/preprocessed_datasets/GN) — News headlines and content extracted from Google News, curated for topic modeling tasks.
-- [M10](https://github.com/AdhyaSuman/Eval_NegTM/tree/master/preprocessed_datasets/M10) — A scholarly dataset containing abstracts of scientific publications across 10 disciplines.
-- [Wiki40B](https://github.com/AdhyaSuman/Eval_NegTM/tree/master/preprocessed_datasets/Wiki40B) — A **subsample** of the [original Wiki40B dataset](https://huggingface.co/datasets/google/wiki40b) consisting subset of 24,774 English documents.
+- [**20NewsGroups (20NG)**](https://github.com/AdhyaSuman/Eval_NegTM/tree/master/preprocessed_datasets/20NewsGroup) — A collection of approximately **16,309 documents** (after preprocessing), distributed across 20 different newsgroups. Detailed preprocessing steps are available in the [metadata file](https://github.com/AdhyaSuman/Eval_NegTM/blob/master/preprocessed_datasets/20NewsGroup/metadata.json).
+
+- [**GoogleNews (GN)**](https://github.com/AdhyaSuman/Eval_NegTM/tree/master/preprocessed_datasets/GN) — A dataset comprising **11,109 news articles**, titles, and snippets, collected from the Google News website in **November 2013**.
+
+- [**M10**](https://github.com/AdhyaSuman/Eval_NegTM/tree/master/preprocessed_datasets/M10) — A scholarly corpus from **CiteSeerX**, consisting of **8,355 scientific abstracts** across **10 research domains**.
+
+- [**Wiki40B**](https://github.com/AdhyaSuman/Eval_NegTM/tree/master/preprocessed_datasets/Wiki40B) — A **subsample** of the [original Wiki40B dataset](https://huggingface.co/datasets/google/wiki40b), containing **24,774 English Wikipedia articles**. This subset was selected to balance quality and computational feasibility.
+
 
 
 ## 📄 Citation
